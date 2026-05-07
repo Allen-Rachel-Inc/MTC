@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Tracking Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔹 HEADER -->
+<div class="header">
+  <img src="logo.png" alt="MTC Logo">
+  <img src="TNLOGO.png" class="TN-logo" alt="TN Logo">
+</div>
+
+<!-- 🔹 CONTROLS -->
+<div class="controls">
+  <button onclick="prevSlide()">⬅ Prev</button>
+  <button onclick="nextSlide()">Next ➡</button>
+  <button id="pauseBtn" onclick="togglePause()">Pause</button>
+</div>
+
+<!-- 🔹 TITLE -->
+<h2 id="sheetTitle">Loading...</h2>
+
+<!-- 🔹 DATE -->
+<h3 id="dateHeader">Date: --</h3>
+
+<!-- 🔹 TABLE -->
+<div class="table-container">
+  <table>
+    <thead id="tableHead">
+      <!-- 🔥 MULTI-ROW HEADER WILL BE INJECTED HERE -->
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<!-- 🔹 SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
